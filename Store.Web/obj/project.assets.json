@@ -1,11 +1,49 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net7.0": {
+      "Store/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Store.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Store.dll": {}
+        }
+      },
+      "Store.Memory/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Store": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Store.Memory.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Store.Memory.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Store/1.0.0": {
+      "type": "project",
+      "path": "../Store/Store.csproj",
+      "msbuildProject": "../Store/Store.csproj"
+    },
+    "Store.Memory/1.0.0": {
+      "type": "project",
+      "path": "../Store.Memory/Store.Memory.csproj",
+      "msbuildProject": "../Store.Memory/Store.Memory.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net7.0": [
+      "Store >= 1.0.0",
+      "Store.Memory >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "/Users/lilrockstar/.nuget/packages/": {}
@@ -32,7 +70,14 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/lilrockstar/RiderProjects/Store/Store.Memory/Store.Memory.csproj": {
+              "projectPath": "/Users/lilrockstar/RiderProjects/Store/Store.Memory/Store.Memory.csproj"
+            },
+            "/Users/lilrockstar/RiderProjects/Store/Store/Store.csproj": {
+              "projectPath": "/Users/lilrockstar/RiderProjects/Store/Store/Store.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
