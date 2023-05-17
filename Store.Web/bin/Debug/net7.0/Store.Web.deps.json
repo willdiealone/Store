@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "Store.Web/1.0.0": {
+        "dependencies": {
+          "Store": "1.0.0",
+          "Store.Memory": "1.0.0"
+        },
+        "runtime": {
+          "Store.Web.dll": {}
+        }
+      },
+      "Store/1.0.0": {
+        "runtime": {
+          "Store.dll": {}
+        }
+      },
+      "Store.Memory/1.0.0": {
+        "dependencies": {
+          "Store": "1.0.0"
+        },
+        "runtime": {
+          "Store.Memory.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Store.Web/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Store/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Store.Memory/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

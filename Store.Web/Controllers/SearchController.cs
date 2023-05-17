@@ -4,17 +4,17 @@ namespace Store.Web.Controllers;
 
 public class SearchController : HomeController
 {
-    private readonly IBookRepository BookRepository;
+    private readonly BookService bookService;
     
-    public SearchController(ILogger<HomeController> logger,IBookRepository bookRepository) : base(logger)
+    public SearchController(ILogger<HomeController> logger,BookService bookService) : base(logger)
     {
-        BookRepository = bookRepository;
+        this.bookService = bookService;
     }
 
     [HttpGet]
     public IActionResult Index(string query)
     {
-        var books = BookRepository.GetAllByTitle(query);
+        var books = bookService.GetAllByQuery(query);
         
         return View("Index", books);
     }

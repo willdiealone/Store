@@ -3,16 +3,21 @@
 public class BookRepository : IBookRepository
 {
 
-    private readonly Book[] book =
+    public readonly Book[] book =
     {
-        new Book(1, "Art Of Programming"),
-        new Book(2, "Refactoring"),
-        new Book(3, "C Programming Language")
+        new Book(1, "Art Of Programming","ISBN 12345-678910","D. Knuth"),
+        new Book(2, "Refactoring","ISBN 12345-678911","M. Fowler"),
+        new Book(3, "The C# Programming Language","ISBN 12345-678912","A. Hejlsber")
     };
-        
-        
-    public Book[] GetAllByTitle(string tilePath)
+
+
+    public Book[] GetAllByTitleOrAuthorName(string tileOrAuthorName)
     {
-        return book.Where(b => b.Title.Contains(tilePath)).ToArray();
+        return book.Where(b => b.Title.Contains(tileOrAuthorName)).ToArray();
+    }
+
+    public Book[] GetAllByIsbn(string isbn)
+    {
+        throw new NotImplementedException();
     }
 }

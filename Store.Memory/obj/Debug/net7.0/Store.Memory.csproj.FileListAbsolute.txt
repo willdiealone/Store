@@ -1,0 +1,15 @@
+/Users/lilrockstar/RiderProjects/Store/Store.Memory/bin/Debug/net7.0/Store.Memory.deps.json
+/Users/lilrockstar/RiderProjects/Store/Store.Memory/bin/Debug/net7.0/Store.Memory.dll
+/Users/lilrockstar/RiderProjects/Store/Store.Memory/bin/Debug/net7.0/Store.Memory.pdb
+/Users/lilrockstar/RiderProjects/Store/Store.Memory/bin/Debug/net7.0/Store.dll
+/Users/lilrockstar/RiderProjects/Store/Store.Memory/bin/Debug/net7.0/Store.pdb
+/Users/lilrockstar/RiderProjects/Store/Store.Memory/obj/Debug/net7.0/Store.Memory.csproj.AssemblyReference.cache
+/Users/lilrockstar/RiderProjects/Store/Store.Memory/obj/Debug/net7.0/Store.Memory.GeneratedMSBuildEditorConfig.editorconfig
+/Users/lilrockstar/RiderProjects/Store/Store.Memory/obj/Debug/net7.0/Store.Memory.AssemblyInfoInputs.cache
+/Users/lilrockstar/RiderProjects/Store/Store.Memory/obj/Debug/net7.0/Store.Memory.AssemblyInfo.cs
+/Users/lilrockstar/RiderProjects/Store/Store.Memory/obj/Debug/net7.0/Store.Memory.csproj.CoreCompileInputs.cache
+/Users/lilrockstar/RiderProjects/Store/Store.Memory/obj/Debug/net7.0/Store.Memory.csproj.CopyComplete
+/Users/lilrockstar/RiderProjects/Store/Store.Memory/obj/Debug/net7.0/Store.Memory.dll
+/Users/lilrockstar/RiderProjects/Store/Store.Memory/obj/Debug/net7.0/refint/Store.Memory.dll
+/Users/lilrockstar/RiderProjects/Store/Store.Memory/obj/Debug/net7.0/Store.Memory.pdb
+/Users/lilrockstar/RiderProjects/Store/Store.Memory/obj/Debug/net7.0/ref/Store.Memory.dll
