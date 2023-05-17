@@ -1,0 +1,14 @@
+@model IEnumerable<Store.Book>
+
+@{
+    ViewData["Title"] = "GetThisBooks";
+}
+
+
+
+<div>
+    @foreach (var item in Model)
+    {
+        <p><b>Айди:</b> @item.Id <b>Название книги:</b> "@item.Title"</p>
+    }           
+</div>
