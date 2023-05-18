@@ -13,8 +13,9 @@ public class BookService
     public Book[] GetAllByQuery(string query)
     {
         if (Book.IsIsbn(query))
+        {
             return bookRepository.GetAllByIsbn(query);
-
+        }
         return bookRepository.GetAllByTitleOrAuthorName(query);
     }
 }

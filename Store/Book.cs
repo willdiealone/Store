@@ -22,16 +22,15 @@ public class Book
     // доступен всем класам проекта Store
     internal static bool IsIsbn(string query)
     {
-        if(query == null)
+        if (query == null)
             return false;
 
-        query = query.Replace("-", " ")
-            .Replace(" ","")
+        var newQuery = query.Replace("-", " ")
+            .Replace(" ", "")
             .ToUpper();
         
-        if (Regex.IsMatch(query, @"ISBN\d{13}"))
-            return false;
+        // всегда совпадает с началом строки ^ и всегда совпадает с концом строки $
+        return Regex.IsMatch(newQuery, @"ISBN\d{10}");
         
-        return Regex.IsMatch(query, @"ISBN\d{10}");
     }
 }

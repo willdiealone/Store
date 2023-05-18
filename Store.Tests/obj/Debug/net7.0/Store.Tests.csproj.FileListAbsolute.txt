@@ -99,3 +99,8 @@
 /Users/lilrockstar/RiderProjects/Store/Store.Tests/obj/Debug/net7.0/Store.Tests.pdb
 /Users/lilrockstar/RiderProjects/Store/Store.Tests/obj/Debug/net7.0/Store.Tests.genruntimeconfig.cache
 /Users/lilrockstar/RiderProjects/Store/Store.Tests/obj/Debug/net7.0/ref/Store.Tests.dll
+/Users/lilrockstar/RiderProjects/Store/Store.Tests/bin/Debug/net7.0/Castle.Core.dll
+/Users/lilrockstar/RiderProjects/Store/Store.Tests/bin/Debug/net7.0/Moq.dll
+/Users/lilrockstar/RiderProjects/Store/Store.Tests/bin/Debug/net7.0/System.Diagnostics.EventLog.dll
+/Users/lilrockstar/RiderProjects/Store/Store.Tests/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Diagnostics.EventLog.Messages.dll
+/Users/lilrockstar/RiderProjects/Store/Store.Tests/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Diagnostics.EventLog.dll

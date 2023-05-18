@@ -13,11 +13,12 @@ public class BookRepository : IBookRepository
 
     public Book[] GetAllByTitleOrAuthorName(string tileOrAuthorName)
     {
-        return book.Where(b => b.Title.Contains(tileOrAuthorName)).ToArray();
+        return book.Where(b => b.Title.Contains(tileOrAuthorName) 
+        || b.AuthorName.Contains(tileOrAuthorName)).ToArray();
     }
 
     public Book[] GetAllByIsbn(string isbn)
     {
-        throw new NotImplementedException();
+        return book.Where(b => b.Isbn == isbn).ToArray();
     }
 }

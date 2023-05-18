@@ -1,10 +1,27 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=78070473_002Df829_002D43fb_002Dad01_002Dc93213e4d929/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="IsIsbn_WithNull_ReturnFalse" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=78070473_002Df829_002D43fb_002Dad01_002Dc93213e4d929/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="IsIsbn_WithNull_ReturnFalse" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
     &lt;TestId&gt;xUnit::39681294-7EE1-4FF4-B9DC-AF67A9C610FD::net7.0::Store.Tests.BookTests.IsIsbn_WithNull_ReturnFalse&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::39681294-7EE1-4FF4-B9DC-AF67A9C610FD::net7.0::Store.Tests.BookTests.IsIsbn_WithInvalidIsbn_ReturnFalse&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::39681294-7EE1-4FF4-B9DC-AF67A9C610FD::net7.0::Store.Tests.BookTests.IsIsbn_WithBlankSpace_ReturnFalse&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::39681294-7EE1-4FF4-B9DC-AF67A9C610FD::net7.0::Store.Tests.BookTests.IsIsbn_WithIsbn10Digits_ReturnTrue&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::39681294-7EE1-4FF4-B9DC-AF67A9C610FD::net7.0::Store.Tests.BookTests.IsIsbn_WithIsbn13Digits_ReturnTrue&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::39681294-7EE1-4FF4-B9DC-AF67A9C610FD::net7.0::Store.Tests.BookTests.IsIsbn_WithTrashStart_ReturnFalse&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::39681294-7EE1-4FF4-B9DC-AF67A9C610FD::net7.0::Store.Tests.BookServiceTests.GetAllByQuery_WithIsbn_CallGetAllByQuery&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::39681294-7EE1-4FF4-B9DC-AF67A9C610FD::net7.0::Store.Tests.BookServiceTests.GetAllByQuery_WithAuthor_CallGetAllByQuery&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::39681294-7EE1-4FF4-B9DC-AF67A9C610FD::net7.0::Store.Tests.BookTests.IsIsbn_WithIsbn13Digits_ReturnFalse&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=f725e4cb_002D1272_002D4dbc_002Db5b1_002D5aa06360c98b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="IsIsbn_WithNull_ReturnFalse #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::39681294-7EE1-4FF4-B9DC-AF67A9C610FD::net7.0::Store.Tests.BookTests.IsIsbn_WithNull_ReturnFalse&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::39681294-7EE1-4FF4-B9DC-AF67A9C610FD::net7.0::Store.Tests.BookTests.IsIsbn_WithInvalidIsbn_ReturnFalse&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::39681294-7EE1-4FF4-B9DC-AF67A9C610FD::net7.0::Store.Tests.BookTests.IsIsbn_WithBlankSpace_ReturnFalse&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::39681294-7EE1-4FF4-B9DC-AF67A9C610FD::net7.0::Store.Tests.BookTests.IsIsbn_WithIsbn10Digits_ReturnTrue&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::39681294-7EE1-4FF4-B9DC-AF67A9C610FD::net7.0::Store.Tests.BookTests.IsIsbn_WithIsbn13Digits_ReturnTrue&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::39681294-7EE1-4FF4-B9DC-AF67A9C610FD::net7.0::Store.Tests.BookTests.IsIsbn_WithTrashStart_ReturnFalse&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::39681294-7EE1-4FF4-B9DC-AF67A9C610FD::net7.0::Store.Tests.BookServiceTests.GetAllByQuery_WithIsbn_CallGetAllByQuery&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::39681294-7EE1-4FF4-B9DC-AF67A9C610FD::net7.0::Store.Tests.BookServiceTests.GetAllByQuery_WithAuthor_CallGetAllByQuery&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::39681294-7EE1-4FF4-B9DC-AF67A9C610FD::net7.0::Store.Tests.BookTests.IsIsbn_WithIsbn13Digits_ReturnFalse&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
