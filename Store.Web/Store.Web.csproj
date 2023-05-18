@@ -16,6 +16,7 @@
       <Content Remove="Pages\**" />
       <Content Remove="Views\Search\SearchIndex.cshtml" />
       <Content Remove="Views\Search\GetThisBooks.cshtml" />
+      <Content Remove="Views\Home\Privacy.cshtml" />
     </ItemGroup>
 
     <ItemGroup>

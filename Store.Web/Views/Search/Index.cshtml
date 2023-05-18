@@ -1,14 +1,29 @@
-@model IEnumerable<Store.Book>
+@model Store.Book[]
 
 @{
-    ViewData["Title"] = "GetThisBooks";
+    ViewData["Title"] = "Резултаты поиска";
 }
 
+<h1>Резултаты поиска</h1>
 
-
-<div>
+@if (Model.Length == 0)
+{
+    <p>Ничего не найдено</p>
+}
+else
+{
+    <ul>
     @foreach (var item in Model)
     {
-        <p><b>Айди:</b> @item.Id <b>Название книги:</b> "@item.Title"</p>
-    }           
-</div>
+        <li><a href="@Url.Action("Index", "Book",new {id = item.Id })">@item.Title</a></li>
+    }
+    </ul> 
+}
+
+@* <div> *@
+@*     @foreach (var item in Model) *@
+@*     { *@
+@*         <p><b>№</b> @item.Id <b>Название книги:</b> "@item.Title"</p> *@
+@*         <p><b>Описание книги:</b> @item.Description</p> *@
+@*     }            *@
+@* </div> *@
