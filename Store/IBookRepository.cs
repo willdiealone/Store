@@ -6,4 +6,6 @@ public interface IBookRepository
 
     public Book[] GetAllByIsbn(string isbn);
     
+     public Book GetById(int Id);
+    
 }

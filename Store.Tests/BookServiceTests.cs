@@ -9,10 +9,10 @@ public class BookServiceTests
     {
         var bookRepositoryStub = new Mock<IBookRepository>();
         bookRepositoryStub.Setup(x => x.GetAllByIsbn(It.IsAny<string>()))
-            .Returns(new[] {new Book(1, "","","")});
+            .Returns(new[] {new Book(1, "","","","",0m)});
         
         bookRepositoryStub.Setup(x => x.GetAllByTitleOrAuthorName(It.IsAny<string>()))
-            .Returns(new[] { new Book(2, "", "", "") });
+            .Returns(new[] { new Book(2, "", "", "","",0m) });
 
         var bookService = new BookService(bookRepositoryStub.Object);
 
@@ -28,10 +28,10 @@ public class BookServiceTests
     {
         var bookRepositoryStub = new Mock<IBookRepository>();
         bookRepositoryStub.Setup(x => x.GetAllByIsbn(It.IsAny<string>()))
-            .Returns(new[] {new Book(1, "","","")});
+            .Returns(new[] {new Book(1, "","","","",0m)});
         
         bookRepositoryStub.Setup(x => x.GetAllByTitleOrAuthorName(It.IsAny<string>()))
-            .Returns(new[] { new Book(2, "", "", "") });
+            .Returns(new[] { new Book(2, "", "", "","",0m) });
 
         var bookService = new BookService(bookRepositoryStub.Object);
 

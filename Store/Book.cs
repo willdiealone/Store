@@ -11,12 +11,18 @@ public class Book
 
     public string AuthorName { get; set; }
 
-    public Book(int Id,string Title,string Isbn,string AuthorName)
+    public string Description { get; set; }
+
+    public decimal Price { get; set; }
+
+    public Book(int Id,string Title,string Isbn,string AuthorName,string Description,decimal Price)
     {
         this.Id = Id;
         this.Title = Title;
         this.Isbn = Isbn;
         this.AuthorName = AuthorName;
+        this.Description = Description;
+        this.Price = Price;
     }
 
     // доступен всем класам проекта Store
