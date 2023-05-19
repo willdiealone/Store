@@ -1,3 +1,4 @@
+using System.Net;
 using Store;
 using Store.Memory;
 
@@ -7,6 +8,23 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddTransient<IBookRepository, BookRepository>();
 builder.Services.AddTransient<BookService>();
+
+// распределенная память 
+builder.Services.AddDistributedMemoryCache();
+
+//наша корзина храниться в переменной сессии
+builder.Services.AddSession(options =>
+{
+    // задали вермя жизни сессии
+    options.IdleTimeout = TimeSpan.FromMinutes(20);
+    
+    // HttpOnly = доступ к нашим кукам будет из локальных js. скриптов (только сервер может образаться сюда)
+    options.Cookie.HttpOnly = true;                
+    
+    // тех. информация не отсносится к пользователю
+    options.Cookie.IsEssential = true;
+});
+
 // builder.Services.AddTransient<>()
 
 var app = builder.Build();
@@ -25,6 +43,9 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+
+// запускаем саму сессию
+app.UseSession();
 
 app.MapControllerRoute(
     name: "default",

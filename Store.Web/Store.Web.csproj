@@ -13,22 +13,27 @@
 
     <ItemGroup>
       <Content Remove="Pages\Search\Index.cshtml" />
-      <Content Remove="Pages\**" />
       <Content Remove="Views\Search\SearchIndex.cshtml" />
       <Content Remove="Views\Search\GetThisBooks.cshtml" />
       <Content Remove="Views\Home\Privacy.cshtml" />
+      <Content Remove="Pages\**" />
+      <Content Remove="Views\Cart\Index.cshtml" />
+      <Content Remove="Controllers\Cart\**" />
     </ItemGroup>
 
     <ItemGroup>
       <Compile Remove="Pages\**" />
+      <Compile Remove="Controllers\Cart\**" />
     </ItemGroup>
 
     <ItemGroup>
       <EmbeddedResource Remove="Pages\**" />
+      <EmbeddedResource Remove="Controllers\Cart\**" />
     </ItemGroup>
 
     <ItemGroup>
       <None Remove="Pages\**" />
+      <None Remove="Controllers\Cart\**" />
     </ItemGroup>
 
 </Project>
