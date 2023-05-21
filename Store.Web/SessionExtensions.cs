@@ -17,14 +17,9 @@ public static class SessionExtensions
         using (var stream = new MemoryStream())
         using (var write = new BinaryWriter(stream, Encoding.UTF8, true))
         {
-            write.Write(value.items.Count);
-
-            foreach (var item in value.items)
-            {
-                write.Write(item.Key);
-                write.Write(item.Value);
-            }
-            write.Write(value.Amount);
+            write.Write(value.OrderId);
+            write.Write(value.TotalCount);
+            write.Write(value.TotalPrice);
             
             session.Set(key,stream.ToArray());
         }
@@ -37,21 +32,20 @@ public static class SessionExtensions
             using(var stream = new MemoryStream(buffer))
             using (var reader = new BinaryReader(stream,Encoding.UTF8,true))
             {
-                 value = new Cart();
-                 
-                 var length = reader.ReadInt32();
+                var orderId = reader.ReadInt32();
+                var orderCount = reader.ReadInt32();
+                var orderTotalPrice = reader.ReadDecimal();
 
-                 for (int i = 0; i < length; i++)
-                 {
-                     var bookId = reader.ReadInt32();
-                     var count = reader.ReadInt32();
-                     
-                     value.items.Add(bookId,count);
-                 }
-                 value.Amount = reader.ReadDecimal();
+                value = new Cart(orderId)
+                {
+                    TotalCount = orderCount,
+                    TotalPrice = orderTotalPrice
+                };
+                return true;
             }    
-            return true;
+            
         }
+
         value = null;
         return false;
     }

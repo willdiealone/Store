@@ -6,8 +6,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddTransient<IBookRepository, BookRepository>();
-builder.Services.AddTransient<BookService>();
+builder.Services.AddSingleton<IBookRepository, BookRepository>();
+builder.Services.AddSingleton<IOrderRepository, OrderRepository>();
+builder.Services.AddSingleton<BookService>();
 
 // распределенная память 
 builder.Services.AddDistributedMemoryCache();
